@@ -1,0 +1,64 @@
+# Example stats.json from dump1090-mutability
+#
+#
+
+{  
+   "last1min":{  
+      "start":1427951578.4,
+      "end":1427951638.4,
+      "local":{  
+         "blocks_processed":1098,
+         "blocks_dropped":0,
+         "modeac":0,
+         "modes":390554,
+         "bad":199504,
+         "unknown_icao":175148,
+         "accepted":[  
+            15599,  //accepted with correct crc
+            303		// accepted with 1 bit error corrected
+
+         ],
+         "signal":-13.2,
+         "peak_signal":-4.0,
+         "strong_signals":0
+      },
+      "remote":{  
+         "modeac":0,
+         "modes":0,
+         "bad":0,
+         "unknown_icao":0,
+         "accepted":[  
+            0,
+            0
+         ]
+      },
+      "http_requests":0,
+      "cpr":{  
+         "surface":0,
+         "airborne":1959,
+         "global_ok":1954,
+         "global_bad":0,
+         "global_range":0,
+         "global_speed":0,
+         "global_skipped":2,
+         "local_ok":5,
+         "local_aircraft_relative":5,
+         "local_receiver_relative":0,
+         "local_skipped":0,
+         "local_range":0,
+         "local_speed":0,
+         "filtered":0
+      },
+      "cpu":{  
+         "demod":7907,
+         "reader":1825,
+         "background":379
+      },
+      "tracks":{  
+         "all":1,
+         "single_message":1
+      },
+      "messages":15902
+   }
+}
+"""
